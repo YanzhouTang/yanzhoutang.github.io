@@ -47,20 +47,43 @@ portrait_url: /assets/images/photos/portrait.png   # TODO: replace this file wit
 #   Optional tooltip shown when hovering over the photo.
 
 # Education / experience / awards are shown in the card under "About Me".
-# `logo` is optional; without it a small icon is shown.
+# Logos live in assets/images/badges/ (square PNGs); `logo` is optional.
 
-# TODO: fill in your education, newest first. Example:
-# education:
-# - name: University Name
-#   logo: /assets/images/badges/university.png
-#   position: B.S. in Computer Science
-#   date: Sep. 2022 - Jun. 2026
+education:
+- name: Georgia Institute of Technology
+  logo: /assets/images/badges/gatech.png
+  position: Ph.D. Student in Computer Science
+  date: Aug. 2026 – present
+- name: Shanghai Jiao Tong University
+  logo: /assets/images/badges/sjtu.png
+  position: M.S. in Integrated Circuit Science and Engineering
+  date: Sept. 2023 – June 2026
+- name: Shanghai Jiao Tong University
+  logo: /assets/images/badges/sjtu.png
+  position: B.Eng. in Microelectronics Science and Engineering
+  date: Sept. 2019 – June 2023
 
 experience:
-- name: Georgia Institute of Technology
-  position: >-
-    Research Assistant, <a href="https://eiclab.scs.gatech.edu" target="_blank">EIC Lab</a>
-  date: 2026 - present
+- name: EIC Lab, Georgia Tech
+  logo: /assets/images/badges/gatech.png
+  position: Graduate Research Assistant
+  date: Aug. 2026 – present
+- name: SAI Lab, New York University
+  logo: /assets/images/badges/nyu.png
+  position: Research Intern
+  date: Apr. 2025 – Apr. 2026
+- name: AMD
+  logo: /assets/images/badges/amd.png
+  position: Chip Infra R&D Intern
+  date: Jan. 2025 – Sept. 2025
+- name: Momenta
+  logo: /assets/images/badges/momenta.png
+  position: SoC R&D Intern
+  date: Aug. 2024 – Dec. 2024
+- name: ChipEasy
+  logo: /assets/images/badges/chipeasy.png
+  position: Digital Circuit R&D Intern
+  date: Mar. 2024 – July 2024
 
 # awards:
 # - name: Award Name
