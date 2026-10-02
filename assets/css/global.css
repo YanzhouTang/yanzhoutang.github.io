@@ -430,3 +430,9 @@ a:hover {
 .svc-list li {
     padding: 0.1rem 0;
 }
+
+/* Emphasized phrase in About Me (e.g. the collaboration sentence) */
+.bio-highlight {
+    color: #c62828;
+    font-weight: 700;
+}
