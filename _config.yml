@@ -16,6 +16,11 @@
 url: "https://yanzhoutang.com"
 baseurl: "" # served at the domain root (custom domain yanzhoutang.com)
 
+# Short description for search results and link previews (kept free of the year of study so it stays true)
+description: >-
+  Yanzhou Tang, CS Ph.D. student at Georgia Tech advised by Prof. Yingyan (Celine) Lin,
+  working on efficient agentic AI systems and efficient spatial computing systems.
+
 # Build settings
 markdown: kramdown
 plugins:
