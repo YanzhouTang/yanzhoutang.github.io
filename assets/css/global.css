@@ -284,3 +284,20 @@ div.lazy {
         display: none;     /* no empty placeholder box on phones */
     }
 }
+
+/* Card titles (News / Publications / Experience / Education) */
+.card-title-lg {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.card-title-lg > i,
+.card-title-lg > span > i {
+    width: 1.3em;
+    margin-right: 0.15em;
+    text-align: center;
+}
+
+.card-title-lg a.small {
+    font-size: 0.95rem;
+}

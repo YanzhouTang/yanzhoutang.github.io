@@ -5,7 +5,7 @@
 {%- assign items = include.items -%}
 {%- if items and items.size > 0 %}
 <div class="my-3 bg-white shadow-sm rounded-xl cv-card">
-    <h6 class="p-3 mb-0 border-bottom border-gray"><i class="{{ include.icon }}"></i> {{ include.title }}</h6>
+    <h6 class="card-title-lg p-3 mb-0 border-bottom border-gray"><i class="{{ include.icon }}"></i> {{ include.title }}</h6>
     <ul class="list-unstyled px-3 py-1 mb-0">
         {%- for item in items %}
         <li class="media py-2{% unless forloop.first %} border-top border-gray{% endunless %}">
