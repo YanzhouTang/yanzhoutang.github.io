@@ -19,3 +19,36 @@
     {%- if site.google_site_verification %}
     <meta name="google-site-verification" content="{{ site.google_site_verification }}">
     {%- endif %}
+    {%- if page.url == '/' %}
+    {%- comment -%}
+      Structured "identity card" for search engines (schema.org Person, JSON-LD). Invisible on the page.
+      Name, photo, email and profile links come from _data/profile.yml (adding gscholar there adds it here too);
+      the school / lab / research lines below are written out by hand.
+    {%- endcomment -%}
+    {%- assign p = site.data.profile -%}
+    {%- capture same_as -%}
+    {%- if p.gscholar -%}{%- if p.gscholar contains 'scholar.google' -%}{{ p.gscholar }}{%- else -%}https://scholar.google.com/citations?user={{ p.gscholar }}{%- endif -%}|{%- endif -%}
+    {%- if p.github -%}https://github.com/{{ p.github }}|{%- endif -%}
+    {%- if p.linkedin -%}https://www.linkedin.com/in/{{ p.linkedin }}|{%- endif -%}
+    {%- if p.twitter -%}https://x.com/{{ p.twitter }}|{%- endif -%}
+    {%- if p.orcid -%}https://orcid.org/{{ p.orcid }}|{%- endif -%}
+    {%- endcapture -%}
+    {%- assign same_as = same_as | strip | split: '|' %}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": {{ seo_name | jsonify }},
+      "url": {{ '/' | absolute_url | jsonify }},
+      "image": {{ p.portrait_url | absolute_url | jsonify }},
+      "description": {{ seo_desc | jsonify }},
+      "jobTitle": "Ph.D. Student in Computer Science",
+      "email": {{ p.email | prepend: 'mailto:' | jsonify }},
+      "affiliation": { "@type": "CollegeOrUniversity", "name": "Georgia Institute of Technology", "url": "https://www.gatech.edu/" },
+      "memberOf": { "@type": "Organization", "name": "Efficient and Intelligent Computing (EIC) Lab", "url": "https://eiclab.scs.gatech.edu/" },
+      "alumniOf": { "@type": "CollegeOrUniversity", "name": "Shanghai Jiao Tong University", "url": "https://www.sjtu.edu.cn/" },
+      "knowsAbout": ["Computer systems", "Computer architecture", "Efficient agentic AI systems", "Efficient spatial computing systems"],
+      "sameAs": {{ same_as | jsonify }}
+    }
+    </script>
+    {%- endif %}
