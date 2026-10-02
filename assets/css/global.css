@@ -51,6 +51,13 @@ h1, h2, h3, h4, h5, h6,
     font-weight: 400;
 }
 
+/* About Me: flush left and right edges on tablet/desktop (phones stay left-aligned) */
+@media (min-width: 768px) {
+    .text-profile-bio p {
+        text-align: justify;
+    }
+}
+
 .navbar {
     background-color: rgba(255, 255, 255, 0.6) !important;
     backdrop-filter: blur(16px);
