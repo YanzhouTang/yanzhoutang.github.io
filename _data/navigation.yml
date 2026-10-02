@@ -1,0 +1,9 @@
+pages:
+# NOTE: `name` must match the `navbar_title` in that page's front matter so the right item is highlighted.
+- name: Home
+  url: /
+- name: Publications
+  url: /publications
+# To turn on the blog: add Markdown posts to _posts/ and uncomment the two lines below.
+# - name: Blog
+#   url: /blog

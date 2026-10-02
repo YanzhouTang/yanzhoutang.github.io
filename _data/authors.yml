@@ -1,0 +1,11 @@
+# How author names in _publications/*.md are displayed.
+#   bold: true   -> highlighted (use for yourself)
+#   url: ...     -> links the name to that person's homepage
+#   name: ...    -> display name, if the key differs (e.g. to disambiguate two people with the same name)
+
+"Yanzhou Tang":
+  bold: true
+
+# Example co-author:
+# "Jane Doe":
+#   url: https://janedoe.github.io

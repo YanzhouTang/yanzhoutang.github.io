@@ -1,0 +1,62 @@
+# ---------------------------------------------------------------------------
+# Your profile. Everything on the home page's left card + "About Me" comes from here.
+# Lines marked TODO are waiting for your info; commented-out lines are hidden.
+# ---------------------------------------------------------------------------
+
+primary_name: "Yanzhou (Enzo) Tang"
+secondary_name: ""            # optional, e.g. your name in Chinese
+navbar_name: "Yanzhou (Enzo) Tang"
+
+positions:
+- name: Research Assistant
+- name: Georgia Institute of Technology
+  # logo: /assets/images/badges/gatech.png   # optional small round logo (put the file in assets/images/badges/)
+
+email: "ytang614@gatech.edu"
+# cv_link: /assets/files/cv.pdf               # TODO: put your CV PDF here to show a "Curriculum Vitae" link
+# gscholar: XXXXXXXXXXXX                      # TODO: Google Scholar user ID (the part after user= in your profile URL)
+github: YanzhouTang
+# twitter: your_twitter_id                    # without the '@'
+# linkedin: your-linked-in-id
+# orcid: 0000-0000-0000-0000
+
+short_bio_text_justify: false
+short_bio: >-
+  <p>
+    Hi! I am <strong>Yanzhou (Enzo) Tang</strong>, a Research Assistant in the
+    <a href="https://eiclab.scs.gatech.edu" target="_blank">Efficient and Intelligent Computing (EIC) Lab</a>
+    at the <a href="https://www.gatech.edu" target="_blank">Georgia Institute of Technology</a>.
+    <!-- TODO: add your advisor, e.g. "advised by Prof. XXX", and your degree program / prior school. -->
+  </p>
+  <p>
+    My research interests lie broadly in <strong>computer systems</strong> and <strong>computer architecture</strong>.
+    I am currently working on <strong>LLM-based multi-agent systems</strong>.
+  </p>
+  <p>
+    I am always happy to chat about research &mdash; feel free to reach out by
+    <a href="mailto:ytang614@gatech.edu">email</a>.
+  </p>
+
+portrait_url: /assets/images/photos/portrait.png   # TODO: replace this file with your own photo (square or 4:5 works best)
+# portrait_caption: >-
+#   Optional tooltip shown when hovering over the photo.
+
+# Education / experience / awards are shown in the card under "About Me".
+# `logo` is optional; without it a small icon is shown.
+
+# TODO: fill in your education, newest first. Example:
+# education:
+# - name: University Name
+#   logo: /assets/images/badges/university.png
+#   position: B.S. in Computer Science
+#   date: Sep. 2022 - Jun. 2026
+
+experience:
+- name: Georgia Institute of Technology
+  position: >-
+    Research Assistant, <a href="https://eiclab.scs.gatech.edu" target="_blank">EIC Lab</a>
+  date: 2026 - present
+
+# awards:
+# - name: Award Name
+#   date: 2025
