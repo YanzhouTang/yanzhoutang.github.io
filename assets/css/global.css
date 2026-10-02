@@ -51,6 +51,18 @@ h1, h2, h3, h4, h5, h6,
     font-weight: 400;
 }
 
+/* Avoid a lonely last line in the About Me paragraphs */
+.text-profile-bio p {
+    text-wrap: pretty;
+}
+
+/* Words wrapped in .bio-tail stay together on the last line (tablet/desktop) */
+@media (min-width: 768px) {
+    .bio-tail {
+        white-space: nowrap;
+    }
+}
+
 .navbar {
     background-color: rgba(255, 255, 255, 0.6) !important;
     backdrop-filter: blur(16px);
@@ -162,18 +174,18 @@ div.lazy {
 
 /* Experience / Education cards */
 .cv-logo {
-    width: 32px;
-    height: 32px;
-    flex: 0 0 32px;
+    width: 48px;
+    height: 48px;
+    flex: 0 0 48px;
     object-fit: contain;
-    margin-top: 0.15rem;
+    align-self: center;
 }
 
 .cv-logo-fallback {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
 }
 
 .cv-name {
@@ -183,4 +195,23 @@ div.lazy {
 /* Profile card social icons */
 .profile-icons {
     font-size: 1.9rem;
+}
+
+/* Home page columns: a slightly wider profile card on large screens */
+@media (min-width: 1200px) {
+    .col-profile {
+        flex: 0 0 27%;
+        max-width: 27%;
+    }
+    .col-main {
+        flex: 0 0 73%;
+        max-width: 73%;
+    }
+}
+
+/* Keep each position (e.g. "Georgia Institute of Technology") on one line */
+@media (min-width: 992px) {
+    .profile-positions {
+        white-space: nowrap;
+    }
 }

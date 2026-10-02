@@ -21,6 +21,8 @@ linkedin: yanzhou-tang
 # orcid: 0000-0000-0000-0000
 
 short_bio_text_justify: false
+# Tip: wrap the last few words of a paragraph in <span class="bio-tail">...</span> to keep them
+# together, so the paragraph never ends with a lonely word on its own line.
 short_bio: >-
   <p>
     Hi! I am <strong>Yanzhou Tang</strong>, a first-year CS Ph.D. student at the Georgia Institute of Technology,
@@ -35,11 +37,11 @@ short_bio: >-
     Before joining Georgia Tech, I had a wonderful research experience at the SAI Lab at New York University,
     where I was a research intern advised by <a href="https://www.saiqianzhang.com/" target="_blank">Prof. Sai Qian Zhang</a>
     and worked closely with <a href="https://naizhengtan.github.io/" target="_blank">Prof. Cheng Tan</a>.
-    I received both my B.S. and M.S. degrees from Shanghai Jiao Tong University.
+    I received both my B.S. and M.S. degrees from <span class="bio-tail">Shanghai Jiao Tong University.</span>
   </p>
   <p>
-    I am always open to collaborations. If you are interested in my research, feel free to reach out by
-    <a href="mailto:ytang614@gatech.edu">email</a>!
+    I am always open to collaborations. If you are interested in my research, <span class="bio-tail">feel free to reach out by
+    <a href="mailto:ytang614@gatech.edu">email</a>!</span>
   </p>
 
 portrait_url: /assets/images/photos/portrait.png   # TODO: replace this file with your own photo (square or 4:5 works best)
