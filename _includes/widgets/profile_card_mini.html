@@ -55,6 +55,12 @@
                         </a>
                         {% endif %}
                         
+                        {% if site.data.profile.linkedin %}
+                        <a class="px-1 no-break" target="_blank" href="https://www.linkedin.com/in/{{ site.data.profile.linkedin }}">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        {% endif %}
+
                         {% if site.data.profile.github %}
                         <a class="px-1 no-break" target="_blank" href="https://github.com/{{ site.data.profile.github }}">
                             <i class="fab fa-github"></i>
@@ -64,12 +70,6 @@
                         {% if site.data.profile.twitter %}
                         <a class="px-1 no-break" target="_blank" href="https://twitter.com/{{ site.data.profile.twitter }}">
                             <i class="fab fa-twitter"></i>
-                        </a>
-                        {% endif %}
-
-                        {% if site.data.profile.linkedin %}
-                        <a class="px-1 no-break" target="_blank" href="https://www.linkedin.com/in/{{ site.data.profile.linkedin }}">
-                            <i class="fab fa-linkedin"></i>
                         </a>
                         {% endif %}
 
