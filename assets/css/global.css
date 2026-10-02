@@ -210,3 +210,9 @@ div.lazy {
         white-space: nowrap;
     }
 }
+
+/* News card */
+.news-date {
+    flex: 0 0 auto;
+    font-variant-numeric: tabular-nums;
+}
