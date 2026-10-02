@@ -224,3 +224,63 @@ div.lazy {
     object-fit: cover;
     object-position: 50% 25%;
 }
+
+/* Publications: venue label + figure on the left, details on the right */
+.pub-side {
+    flex: 0 0 176px;
+    max-width: 176px;
+}
+
+.pub-venue {
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+}
+
+.pub-cover {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    border-radius: 0.375rem;
+}
+
+.pub-cover-empty {
+    background: #f1f3f5;
+    border: 1px dashed #d5d9de;
+}
+
+.pub-body {
+    min-width: 0;
+}
+
+.pub-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+}
+
+.pub-authors,
+.pub-venue-full,
+.pub-links {
+    font-size: 0.95rem;
+}
+
+.pub-venue-full {
+    font-style: italic;
+}
+
+.pub-authors .text-body {
+    white-space: nowrap;   /* keep each author's name on one line */
+}
+
+@media (max-width: 767.98px) {
+    .pub-side {
+        max-width: 100%;
+    }
+    .pub-cover {
+        max-width: 280px;
+    }
+    .pub-cover-empty {
+        display: none;     /* no empty placeholder box on phones */
+    }
+}
