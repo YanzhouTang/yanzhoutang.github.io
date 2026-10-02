@@ -1,4 +1,13 @@
 @charset "utf-8";
+/* Larger base size: everything sized in rem (Bootstrap) scales with it */
+html {
+    font-size: 112.5%;   /* 18px with default browser settings */
+}
+
+.small, small {
+    font-size: 88%;
+}
+
 body {
     font-family: "Lato", sans-serif;
     font-weight: 400;
@@ -149,4 +158,29 @@ div.lazy {
     .carousel-indicators button {
         transition: none;
     }
+}
+
+/* Experience / Education cards */
+.cv-logo {
+    width: 32px;
+    height: 32px;
+    flex: 0 0 32px;
+    object-fit: contain;
+    margin-top: 0.15rem;
+}
+
+.cv-logo-fallback {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.cv-name {
+    font-size: 1.05rem;
+}
+
+/* Profile card social icons */
+.profile-icons {
+    font-size: 1.9rem;
 }

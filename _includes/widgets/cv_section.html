@@ -1,0 +1,28 @@
+{%- comment -%}
+  One CV card. Params: items (list), title, icon (Font Awesome classes).
+  Each item: name, position, date, logo (optional).
+{%- endcomment -%}
+{%- assign items = include.items -%}
+{%- if items and items.size > 0 %}
+<div class="my-3 bg-white shadow-sm rounded-xl cv-card">
+    <h6 class="p-3 mb-0 border-bottom border-gray"><i class="{{ include.icon }}"></i> {{ include.title }}</h6>
+    <ul class="list-unstyled px-3 py-1 mb-0">
+        {%- for item in items %}
+        <li class="media py-2{% unless forloop.first %} border-top border-gray{% endunless %}">
+            {%- if item.logo %}
+            <img src="{{ item.logo | relative_url }}" alt="" class="cv-logo mr-3">
+            {%- else %}
+            <span class="cv-logo cv-logo-fallback mr-3"><i class="fas fa-building-columns text-muted"></i></span>
+            {%- endif %}
+            <div class="media-body">
+                <div class="d-flex flex-wrap align-items-baseline">
+                    <div class="cv-name mr-2">{{ item.name }}</div>
+                    {% if item.date %}<div class="ml-auto text-muted no-break small"><em>{{ item.date }}</em></div>{% endif %}
+                </div>
+                {% if item.position %}<div class="small">{{ item.position }}</div>{% endif %}
+            </div>
+        </li>
+        {%- endfor %}
+    </ul>
+</div>
+{%- endif -%}
