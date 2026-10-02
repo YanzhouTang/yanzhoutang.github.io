@@ -235,15 +235,16 @@ div.lazy {
     display: block;
     width: 100%;              /* same width as the figure below it */
     margin-bottom: 0.5rem;
-    padding: 0.2rem 0.5rem;
+    padding: 0 0.5rem;
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     font-weight: 700;
+    line-height: 1.6;
     letter-spacing: 0.02em;
-    color: #17365d;
-    background: #eef3f9;
-    border: 1px solid #c8d6e6;
-    border-radius: 0.5rem;
+    color: #1a4f8f;
+    background: #e3efff;
+    border: 1px solid #b7d4fb;
+    border-radius: 0.4rem;
 }
 
 .pub-cover {
