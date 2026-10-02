@@ -232,8 +232,18 @@ div.lazy {
 }
 
 .pub-venue {
+    display: block;
+    width: 100%;              /* same width as the figure below it */
+    margin-bottom: 0.5rem;
+    padding: 0.2rem 0.5rem;
+    text-align: center;
+    font-size: 0.9rem;
     font-weight: 700;
-    margin-bottom: 0.4rem;
+    letter-spacing: 0.02em;
+    color: #17365d;
+    background: #eef3f9;
+    border: 1px solid #c8d6e6;
+    border-radius: 0.5rem;
 }
 
 .pub-cover {
@@ -369,4 +379,29 @@ div.lazy {
 
 html:has(.fig-viewer[open]) {
     overflow: hidden;   /* no page scrolling behind the viewer */
+}
+
+/* Typography tuned after zishenwan.github.io: same Lato font, softer text color,
+   navy headings, a calmer link blue and slightly more line spacing */
+body {
+    color: #1f2937;
+    line-height: 1.55;
+}
+
+.text-body {
+    color: #1f2937 !important;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    color: #17365d;
+    letter-spacing: -0.01em;
+}
+
+a {
+    color: #1772d0;
+}
+
+a:hover {
+    color: #0f5aa8;
 }
