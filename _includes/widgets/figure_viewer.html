@@ -1,0 +1,11 @@
+{%- comment -%}
+  In-page viewer for publication figures (opened by assets/js/figure_viewer.js).
+  Closes with the X button, the Esc key, or a click outside the figure.
+{%- endcomment -%}
+<dialog id="figure-viewer" class="fig-viewer" closedby="any" aria-label="Figure">
+    <form method="dialog">
+        <button type="submit" class="fig-viewer-close" aria-label="Close"><i class="fas fa-xmark"></i></button>
+    </form>
+    <img class="fig-viewer-img" alt="">
+    <div class="fig-viewer-caption"></div>
+</dialog>

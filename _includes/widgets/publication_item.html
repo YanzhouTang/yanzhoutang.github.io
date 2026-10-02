@@ -9,7 +9,7 @@
         <div class="pub-venue">{{ item.venue_short }}</div>
         {%- endif %}
         {%- if item.cover %}
-        <a href="{{ item.cover | relative_url }}" target="_blank" title="Open full-size figure"><img src="{{ item.cover | relative_url }}" alt="{{ item.title | strip_html }}" class="pub-cover pub-cover-img" loading="lazy"></a>
+        <a href="{{ item.cover | relative_url }}" class="pub-cover-link" data-caption="{{ item.title | strip_html | escape }}" title="View full-size figure"><img src="{{ item.cover | relative_url }}" alt="{{ item.title | strip_html }}" class="pub-cover pub-cover-img" loading="lazy"></a>
         {%- else %}
         <div class="pub-cover pub-cover-empty" aria-hidden="true"></div>
         {%- endif %}
