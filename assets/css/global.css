@@ -406,3 +406,11 @@ a {
 a:hover {
     color: #0f5aa8;
 }
+
+/* Icon in place of a logo (e.g. Professional Services) */
+.cv-logo-icon {
+    border-radius: 50%;
+    background: #e3efff;
+    color: #1a4f8f;
+    font-size: 1.3rem;
+}

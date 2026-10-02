@@ -1,7 +1,9 @@
 {%- comment -%}
-  Experience / Education / Honors & Awards, each in its own card (in that order).
-  Data: _data/profile.yml -> experience, education, awards. `logo` is optional.
+  Experience / Education / Honors & Awards / Teaching / Professional Services, each in its own card (in that order).
+  Data: _data/profile.yml -> experience, education, awards, teaching, services. `logo` is optional.
 {%- endcomment -%}
 {%- include widgets/cv_section.html items=site.data.profile.experience title="Experience" icon="fas fa-briefcase" -%}
 {%- include widgets/cv_section.html items=site.data.profile.education title="Education" icon="fas fa-graduation-cap" -%}
 {%- include widgets/cv_section.html items=site.data.profile.awards title="Honors &amp; Awards" icon="fas fa-award" -%}
+{%- include widgets/cv_section.html items=site.data.profile.teaching title="Teaching" icon="fas fa-chalkboard-user" -%}
+{%- include widgets/cv_section.html items=site.data.profile.services title="Professional Services" icon="fas fa-handshake-angle" -%}
