@@ -79,24 +79,25 @@ experience:
   date: Jan. 2025 – Sept. 2025
 
 teaching:
-- name: Teaching Assistant at Shanghai Jiao Tong University
+- name: "SJTU MST2305: Digital Logic and Design"
   logo: /assets/images/badges/sjtu.png
-  position: "MST2305: Digital Logic and Design"
+  position: Teaching Assistant
   date: Spring 2025
-- name: Teaching Assistant at Shanghai Jiao Tong University
+- name: SJTU Development of Artificial Intelligence Chips
   logo: /assets/images/badges/sjtu.png
-  position: Development of Artificial Intelligence Chips
+  position: Teaching Assistant
   date: Spring 2023, Fall 2023
-- name: Student Counselor at Shanghai Jiao Tong University
+- name: Shanghai Jiao Tong University
   logo: /assets/images/badges/sjtu.png
+  position: Student Counselor
   date: 2023 – 2025
 
-# Items without a logo can show a Font Awesome icon instead (`icon:`).
+# Professional services: a sub-heading per role, then one line per venue with its year.
 services:
-- name: Artifact Evaluation Committee
-  icon: fas fa-clipboard-check
-  position: International Symposium on Microarchitecture (MICRO)
-  date: "2026"
+- group: Artifact Evaluation Committee
+  items:
+  - name: International Symposium on Microarchitecture (MICRO)
+    date: "2026"
 
 # awards:
 # - name: Award Name

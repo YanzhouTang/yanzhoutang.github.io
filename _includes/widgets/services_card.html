@@ -1,0 +1,27 @@
+{%- comment -%}
+  Professional Services card. Data: _data/profile.yml -> services
+  (each entry: group = sub-heading, items = list of {name, date}).
+{%- endcomment -%}
+{%- assign groups = site.data.profile.services -%}
+{%- if groups and groups.size > 0 %}
+<div class="my-3 bg-white shadow-sm rounded-xl cv-card">
+    <h6 class="card-title-lg p-3 mb-0 border-bottom border-gray"><i class="fas fa-handshake-angle"></i> Professional Services</h6>
+    <div class="px-3 py-1">
+        {%- for g in groups %}
+        <div class="svc-group py-2{% unless forloop.first %} border-top border-gray{% endunless %}">
+            <div class="svc-title">{{ g.group }}</div>
+            <ul class="svc-list mb-0">
+                {%- for it in g.items %}
+                <li>
+                    <div class="d-flex flex-wrap align-items-baseline">
+                        <div class="mr-2">{{ it.name }}</div>
+                        {% if it.date %}<div class="ml-auto text-muted no-break small"><em>{{ it.date }}</em></div>{% endif %}
+                    </div>
+                </li>
+                {%- endfor %}
+            </ul>
+        </div>
+        {%- endfor %}
+    </div>
+</div>
+{%- endif -%}

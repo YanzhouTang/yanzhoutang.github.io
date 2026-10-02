@@ -414,3 +414,19 @@ a:hover {
     color: #1a4f8f;
     font-size: 1.3rem;
 }
+
+/* Professional Services: sub-heading per role, then venue + year rows */
+.svc-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #17365d;
+    margin-bottom: 0.15rem;
+}
+
+.svc-list {
+    padding-left: 1.2rem;
+}
+
+.svc-list li {
+    padding: 0.1rem 0;
+}
