@@ -227,8 +227,8 @@ div.lazy {
 
 /* Publications: venue label + figure on the left, details on the right */
 .pub-side {
-    flex: 0 0 176px;
-    max-width: 176px;
+    flex: 0 0 200px;
+    max-width: 200px;
 }
 
 .pub-venue {
@@ -242,6 +242,14 @@ div.lazy {
     aspect-ratio: 16 / 10;
     object-fit: cover;
     border-radius: 0.375rem;
+}
+
+.pub-cover-img {
+    aspect-ratio: auto;
+    height: auto;
+    object-fit: contain;
+    background: #fff;
+    border: 1px solid #e3e6ea;
 }
 
 .pub-cover-empty {
@@ -279,6 +287,9 @@ div.lazy {
     }
     .pub-cover {
         max-width: 280px;
+    }
+    .pub-cover-img {
+        max-width: 100%;
     }
     .pub-cover-empty {
         display: none;     /* no empty placeholder box on phones */
