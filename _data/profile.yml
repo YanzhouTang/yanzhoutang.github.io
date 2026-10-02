@@ -43,7 +43,7 @@ short_bio: >-
     I am always open to collaborations. If my research interests you, feel free to <a href="mailto:ytang614@gatech.edu">email</a>&nbsp;me!
   </p>
 
-portrait_url: /assets/images/photos/portrait.png   # TODO: replace this file with your own photo (square or 4:5 works best)
+portrait_url: /assets/images/photos/portrait.jpg   # 4:5 photo (phones show a round crop of it)
 # portrait_caption: >-
 #   Optional tooltip shown when hovering over the photo.
 

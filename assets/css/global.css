@@ -216,3 +216,11 @@ div.lazy {
     flex: 0 0 auto;
     font-variant-numeric: tabular-nums;
 }
+
+/* Phone layout: round portrait cropped from the 4:5 photo */
+.portrait-mobile {
+    width: 50%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: 50% 25%;
+}
