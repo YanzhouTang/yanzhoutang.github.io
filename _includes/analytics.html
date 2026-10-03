@@ -1,0 +1,15 @@
+{%- comment -%}
+  Google Analytics 4 (visitor statistics; nothing is shown on the page).
+  The measurement ID comes from `google_analytics` in _config.yml; delete that line there to turn it off.
+  Only added on the live site (GitHub Pages builds with JEKYLL_ENV=production), so local previews are not counted.
+{%- endcomment -%}
+{%- if site.google_analytics and jekyll.environment == 'production' %}
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '{{ site.google_analytics }}');
+    </script>
+{%- endif %}

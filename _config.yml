@@ -21,6 +21,9 @@ description: >-
   Yanzhou Tang, CS Ph.D. student at Georgia Tech,
   working on efficient agentic AI systems and efficient spatial computing systems.
 
+# Google Analytics 4 measurement ID (visitor statistics at analytics.google.com). Delete this line to turn it off.
+google_analytics: G-NFBMZNHBEG
+
 # Build settings
 markdown: kramdown
 plugins:
