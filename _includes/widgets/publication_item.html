@@ -1,6 +1,6 @@
 {%- comment -%}
   One publication: venue label + figure on the left, title / authors / venue on the right.
-  Fields (in _publications/*.md): title, authors, venue_short, venue, cover (optional), links (optional).
+  Fields (in _publications/*.md): title, authors, venue_short, venue, cover (optional), pdf (optional: the title links to it), links (optional).
 {%- endcomment -%}
 {%- assign item = include.item -%}
 <div class="pub-item d-md-flex px-3 py-3{% unless include.first %} border-top border-gray{% endunless %}">
@@ -15,7 +15,7 @@
         {%- endif %}
     </div>
     <div class="pub-body">
-        <div class="pub-title">{{ item.title }}</div>
+        <div class="pub-title">{% if item.pdf %}<a href="{{ item.pdf | relative_url }}" target="_blank" rel="noopener">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}</div>
         <div class="pub-authors">{% include widgets/author_list.html authors=item.authors %}</div>
         <div class="pub-venue-full">{{ item.venue }}</div>
         {%- if item.links %}

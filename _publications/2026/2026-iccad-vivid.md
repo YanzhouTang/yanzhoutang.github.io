@@ -5,6 +5,7 @@ selected:    true         # true = also shown on the home page
 venue_short: "ICCAD 2026"
 venue:       "In 45th IEEE/ACM International Conference on Computer-Aided Design (ICCAD),&nbsp;2026."
 cover:       /assets/images/covers/vivid.png   # figure shown on the left (comment out for a blank placeholder)
+pdf:         /assets/files/papers/ViViD_ICCAD2026.pdf   # paper PDF; the title links to it
 authors:
   - Yanzhou Tang
   - Tianhua Xia
