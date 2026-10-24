@@ -105,6 +105,7 @@ services:
 
 talks:
 - title: CGRA-Based Acceleration for Unified VR Rendering Pipelines
+  pdf: /assets/files/talks/CGRA_VR_Rendering_GT_Systems_Seminar_2026.pdf   # slides; the title links to it
   items:
   - name: Georgia Tech Systems Seminar
     date: Oct. 2026

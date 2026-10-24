@@ -1,6 +1,7 @@
 {%- comment -%}
   Talks card (last card on the home page). Data: _data/profile.yml -> talks
-  (each entry: title = talk title shown as the sub-heading, items = list of {name, date} for where it was given).
+  (each entry: title = talk title shown as the sub-heading, pdf = slides, optional: the title links to it,
+   items = list of {name, date} for where it was given).
 {%- endcomment -%}
 {%- assign talks = site.data.profile.talks -%}
 {%- if talks and talks.size > 0 %}
@@ -9,7 +10,7 @@
     <div class="px-3 py-1">
         {%- for t in talks %}
         <div class="svc-group py-2{% unless forloop.first %} border-top border-gray{% endunless %}">
-            <div class="svc-title">{{ t.title }}</div>
+            <div class="svc-title">{% if t.pdf %}<a href="{{ t.pdf | relative_url }}" target="_blank" rel="noopener">{{ t.title }}</a>{% else %}{{ t.title }}{% endif %}</div>
             <ul class="svc-list mb-0">
                 {%- for it in t.items %}
                 <li>
