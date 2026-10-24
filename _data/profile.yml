@@ -103,6 +103,12 @@ services:
   - name: International Symposium on Microarchitecture (MICRO)
     date: "2026"
 
+talks:
+- title: CGRA-Based Acceleration for Unified VR Rendering Pipelines
+  items:
+  - name: Georgia Tech Systems Seminar
+    date: Oct. 2026
+
 # awards:
 # - name: Award Name
 #   date: 2025
