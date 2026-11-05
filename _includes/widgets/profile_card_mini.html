@@ -44,6 +44,12 @@
 
                 <div class="row pt-2">
                     <div class="col text-center profile-icons">
+                        {% if site.data.profile.linkedin %}
+                        <a class="px-1 no-break" target="_blank" href="https://www.linkedin.com/in/{{ site.data.profile.linkedin }}">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        {% endif %}
+
                         {% if site.data.profile.gscholar %}
                         {%- if site.data.profile.gscholar contains 'scholar.google' -%}
                         {%- assign gscholar_url = site.data.profile.gscholar -%}
@@ -52,12 +58,6 @@
                         {%- endif -%}
                         <a class="px-1 no-break" target="_blank" href="{{ gscholar_url }}">
                             <i class="fab fa-google-scholar"></i>
-                        </a>
-                        {% endif %}
-                        
-                        {% if site.data.profile.linkedin %}
-                        <a class="px-1 no-break" target="_blank" href="https://www.linkedin.com/in/{{ site.data.profile.linkedin }}">
-                            <i class="fab fa-linkedin"></i>
                         </a>
                         {% endif %}
 
