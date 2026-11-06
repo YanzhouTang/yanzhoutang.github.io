@@ -39,6 +39,8 @@ git add -A && git commit -m "update" && git push
 
 改完 `git add -A && git commit -m "..." && git push`，1–2 分钟后生效。也可以直接在 github.com 网页上点铅笔图标编辑。
 
+> 如果改完很久网站都没变：去仓库的 Actions 页看 `pages build and deployment`。偶尔 GitHub 会卡在 Queued 或 deploy 超时（Timeout reached），这时随便再提交一个小改动（比如改这个 README）就会触发一次新的发布。
+
 文件里的 `TODO` 是待你补充的地方；`#` 开头的行是注释（不生效），去掉 `#` 就启用。
 
 | 想改什么 | 改哪个文件 |
